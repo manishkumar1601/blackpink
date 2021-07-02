@@ -4,7 +4,7 @@
 }
 body{
 	font-family: 'Poppins', sans-serif;
-}
+}	
 /* Navbar */
 .navbar {
 	position: relative;
@@ -39,13 +39,6 @@ body{
 	font-size: 10vh;
 	color: #f2c9ff;
 	font-weight: 540;
-}
-.ke3{
-	font-size: 3vh;
-	padding-top: -20px;
-    color: black;
-    font-weight: 520;
-    font-family: 'Black Han Sans', sans-serif;
 }
 
 .span2{
@@ -111,52 +104,135 @@ body{
 	text-align: center;
 }
 /*member*/
-.profile{
-	margin-top: 25px;
+#team{
+	background: linear-gradient(#060606, #F4ACBC);
+	padding: 15vh 0 2vh 0;
 }
-.text-center .img-box{
+.social a{
+	color: #f4acbc;
+}
+.social a:hover{
+	color: black;
+	text-decoration: none;
+}
+.team .member{
+	margin-bottom: 20px;
+	overflow: hidden;
+	border-radius: 5px;
+	background-color: #fff;
+	transition: 0.3s;
+}
+.team .member:hover {
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+	transform: scale(1.04);
+	cursor: pointer;
+}
+.team .member .member-img{
+	position: relative;
+	overflow: hidden;
+}
+.team .member .member-img img:hover{
+	filter: blur(3px);
+}
+.team .member .social{
+	position: absolute;
+	left: 0;
+	top: 40vh;
+	right: 0;
+	opacity: 0;
+	transition: ease-in-out 0.3s;
+	text-align: center;
+}
+.team .member:hover .social{
 	opacity: 1;
-	display: block;
+	bottom: 15px;
+}
+.team .member .social a{
+	transition: color 0.3s;
+}
+.team .member .social a{
+	transition: color 0.3s;
+	color: black;
+	margin: 0 3px;
+	padding-top: 7px;
+	border-radius: 50px;
+	width: 36px;
+	height: 36px;
+	background-color: #f4acbc;
+	display: inline-block;
+	transition: ease-in-out 0.3s;
+	color: white;
+}
+.team .member .social a:hover{
+	background-color: black;
+}
+.team .member .social i{
+	font-size: 18px;
+}
+.team .member .member-info{
+	padding: 15px 15px;
+}
+.team .member .member-info h3{
+	font-weight: bold;
+	margin-bottom: 5px;
+	font-size: 22px;
+	color: #f4acbc;
+}
+.team .member .member-info h4{
+	font-size: 17px;
+	font-weight: 500;
+}
+.team .member .member-info h2{
+	font-size: 18px;
+	font-weight: 600;
+	color: #7D5961;
+}
+
+/*section member*/
+.section-title{
+	text-align: center;
+	color: #f4a4bc;
+	padding-bottom: 6vh;
 	position: relative;
 }
-.profile h2{
-	font-size: 22px;
+.section-title h2{
+	font-size: 34px;
 	font-weight: bold;
-	margin-top: 15px;
+	margin-bottom: 20px;
+	padding-bottom: 10px;
 }
-.profile h4{
-	font-size: 15px;
-	margin-top: 15px;
-}
-.img-box:after{
-	content: '';
-	opacity: 0;
-	background-color: rgba(0,0,0,0,6);
+/*Album*/
+.team .album .btn{
 	position: absolute;
-	right: 0:
-	left: 0; 
-	top: 0;
-	bottom: 0;
-}
-.img-box ul{
-	margin: 0;
-	padding: 20px 0; 
-	position: absolute;
-	z-index: 1;
-	bottom: 0;
-	display: block;
-	left: 50%; 
-	transform: translateX(-50%);
+	left: 0;
+	top: 40vh;
+	right: 0;
 	opacity: 0;
+	transition: ease-in-out 0.3s;
+	text-align: center;
 }
-.img-box ul li{
-	width: 30px;
-	height: 30px;
-	border: 1px solid #fff;
-	border-radius: 50%;
-	margin: 3px;
-	padding: 7px;
+.team .album:hover .btn{
+	opacity: 1;
+	bottom: 15px;
+}
+.team .member .social a{
+	transition: color 0.3s;
+}
+.team .member .social a{
+	transition: color 0.3s;
+	color: black;
+	margin: 0 3px;
+	padding-top: 7px;
+	border-radius: 50px;
+	width: 36px;
+	height: 36px;
+	background-color: #f4acbc;
 	display: inline-block;
+	transition: ease-in-out 0.3s;
+	color: white;
+}
+.team .member .social a:hover{
+	background-color: black;
 }
 /*Large devices (desktops, 992px and up*/
 @media (min-width: 992px) {
@@ -201,13 +277,13 @@ body{
 		font-size: 10vh;
 		padding-top: 0;
 	    color: black;
-	    font-weight: 520;
+	    font-weight: 640;
 	    font-family: 'Black Han Sans', sans-serif;
 	}
 	.ke2 span{
 		font-size: 10vh;
 		color: #f8a4bc;
-		font-weight: 540;
+		font-weight: 640;
 
 	}
 	/*About*/
@@ -225,12 +301,14 @@ body{
 		text-align: center;	
 		color: #fccafb;
 		padding-top: 150px;
-		text-align: left;
+		text-align: center;
 	}
 	.isi{
 		font-size: 17px;
 		margin:  25px 0;
 		color: #f4acbc;
-		text-align: left;
+		text-align: center;
 	}
+	/*member*/
+	
 }
