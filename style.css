@@ -137,7 +137,7 @@ body{
 .team .member .social{
 	position: absolute;
 	left: 0;
-	top: 40vh;
+	top: 35vh;
 	right: 0;
 	opacity: 0;
 	transition: ease-in-out 0.3s;
@@ -202,37 +202,101 @@ body{
 	padding-bottom: 10px;
 }
 /*Album*/
-.team .album .btn{
-	position: absolute;
-	left: 0;
-	top: 40vh;
-	right: 0;
-	opacity: 0;
-	transition: ease-in-out 0.3s;
+#album{
+	background: linear-gradient(#F4ACBC, #060606);
+	padding: 15vh 0 41vh 0;
+}	
+.team .album{
+	margin-bottom: 25px;
+	margin-right: 20px;
+	overflow: hidden;
+}
+.team .album .member-img{
+	position: relative;
+	overflow: hidden;
+}
+.team .album:hover {
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+	transform: scale(1.04);
+	cursor: pointer;
+}
+/*Title Album*/
+.title{
 	text-align: center;
-}
-.team .album:hover .btn{
-	opacity: 1;
-	bottom: 15px;
-}
-.team .member .social a{
-	transition: color 0.3s;
-}
-.team .member .social a{
-	transition: color 0.3s;
 	color: black;
-	margin: 0 3px;
-	padding-top: 7px;
-	border-radius: 50px;
-	width: 36px;
-	height: 36px;
-	background-color: #f4acbc;
-	display: inline-block;
-	transition: ease-in-out 0.3s;
-	color: white;
+	padding-bottom: 8vh;
+	position: relative;
 }
-.team .member .social a:hover{
-	background-color: black;
+.title h2{
+	font-size: 34px;
+	font-weight: bold;
+	margin-bottom: 20px;
+	padding-bottom: 10px;
+}
+.tittle p{
+	padding-bottom: 15vh;
+	font-weight: 560;
+}
+/*Single*/
+#single{
+	background: black;
+	padding-bottom: 15vh;
+	padding-top: 5vh;
+}
+.single{
+	max-width: 1300px;
+	margin: auto;
+	padding-left: 25px;
+	padding-right: 25px;
+}
+.judul{
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.section-judul{
+	text-align: center;
+	color: #f4a4bc;
+	padding-bottom: 0vh;
+	position: relative;
+}
+.section-judul h2{
+	font-size: 34px;
+	font-weight: bold;
+}
+.col-2{
+	flex-basis: 50%;
+	min-width: 300px;
+}
+.col-2 img{
+	max-width: 100%;
+	padding: 50px 0;
+}
+.col-2 h1{
+	font-size: 45px;
+	line-height: 60px;
+	margin: 25px 0;
+	color: #fc8da4;
+}
+.col-2 p{
+	color: white;
+	font-size: 21px;
+}
+.btn {
+    display: inline-block;
+    background: #fc8da4;
+    color: black;
+    padding: 8px 30px;
+    border-radius: 30px;
+    transition: background 0.5s;
+}
+.btn:hover {
+    background: #ffc4d0;
+    color: white;
+}
+.judul a{
+    text-decoration: none;
 }
 /*Large devices (desktops, 992px and up*/
 @media (min-width: 992px) {
@@ -309,6 +373,10 @@ body{
 		color: #f4acbc;
 		text-align: center;
 	}
-	/*member*/
-	
+	/*album*/
+	#album .album .button{
+		left: 7.5%;
+		bottom: 22px;
+		right: 0;
+	}
 }
