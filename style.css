@@ -208,7 +208,7 @@ body{
 }	
 .team .album{
 	margin-bottom: 25px;
-	margin-right: 20px;
+	margin-right: 0px;
 	overflow: hidden;
 }
 .team .album .member-img{
@@ -219,6 +219,19 @@ body{
 	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 	transform: scale(1.04);
 	cursor: pointer;
+}
+.button {
+    display: inline-block;
+    background: black;
+    color: white;
+    padding: 10px 30px;
+    border-radius: 28px;
+    transition: background 0.5s;
+    text-decoration: none;
+}
+.button:hover {
+    background: #fc8da4;
+    color: white;
 }
 /*Title Album*/
 .title{
@@ -285,15 +298,15 @@ body{
 }
 .btn {
     display: inline-block;
-    background: black;
+    background: #fc8da4;
     color: white;
     padding: 8px 30px;
     border-radius: 28px;
     transition: background 0.5s;
 }
 .btn:hover {
-    background: #fc8da4;
-    color: white;
+    background: #fabab6;
+    color: black;
 }
 .judul a{
     text-decoration: none;
@@ -337,6 +350,30 @@ body{
 }
 .bisa .music-container .box .music audio::-webkit-media-controls-eclosure{
 	background: none;
+}
+/*award*/
+#award{
+	background: linear-gradient(#F4ACBC, #0e020f);
+	padding: 5vh 0 30vh;
+}
+.award-card{
+	padding-bottom: 28px;
+}
+.pe{
+	background-color: black;
+	color: #F4ACBC;
+	border-radius: 10px;
+}
+.card-body h5{
+	font-size: 22px;
+	text-transform: capitalize;
+}
+.card-body p{
+	color: white;
+	font-size: 16px;
+}
+.card-body span{
+	text-transform: capitalize;
 }
 /*Large devices (desktops, 992px and up*/
 @media (min-width: 992px) {
@@ -437,6 +474,3 @@ body{
 		align-items: center;
 	}
 }
-
-
-
