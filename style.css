@@ -285,18 +285,58 @@ body{
 }
 .btn {
     display: inline-block;
-    background: #fc8da4;
-    color: black;
+    background: black;
+    color: white;
     padding: 8px 30px;
-    border-radius: 30px;
+    border-radius: 28px;
     transition: background 0.5s;
 }
 .btn:hover {
-    background: #ffc4d0;
+    background: #fc8da4;
     color: white;
 }
 .judul a{
     text-decoration: none;
+}
+/*Playlist*/
+#playlist{
+	background: linear-gradient(#060606, #F4ACBC);
+	padding: 10vh 0 10vh 0;
+}
+.bisa .music-container{
+	display: flex;
+	align-items: center;
+	flex-flow: column;
+}
+.bisa .music-container .box{
+	height: 16rem;
+	width: 90%;
+	display: flex;
+	align-items: center;
+	background: white;
+	border-radius: 12px;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+	overflow: hidden;
+	margin: 2rem;
+}
+.bisa .music-container .box .images{
+	height: 100%;
+	width: 25%;
+}
+.bisa .music-container .box .images img{
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+.bisa .music-container .box .music{
+	width: 75%;
+}
+.bisa .music-container .box .music audio{
+	width: 100%;
+	outline: none;
+}
+.bisa .music-container .box .music audio::-webkit-media-controls-eclosure{
+	background: none;
 }
 /*Large devices (desktops, 992px and up*/
 @media (min-width: 992px) {
@@ -378,5 +418,22 @@ body{
 		left: 7.5%;
 		bottom: 22px;
 		right: 0;
+	}
+}
+@media (max-width: 600px){
+	.bisa .music-container .box{
+		height: 27rem;
+		width: 90%;
+		flex-flow: column;
+	}
+	.bisa .music-container .box .images{
+		height: 80%;
+		width: 100%;
+	}
+	.bisa .music-container .box .music{
+		height: 50%;
+		width: 100%;
+		display: flex;
+		align-items: center;
 	}
 }
