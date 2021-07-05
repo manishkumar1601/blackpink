@@ -375,6 +375,69 @@ body{
 .card-body span{
 	text-transform: capitalize;
 }
+/*footer*/
+.btn-floating{
+    background: black;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 50%;
+    transition: background 0.5s;
+}
+.babi{
+	border-radius: 50%;
+    transition: background 0.5s;
+    font-size: 12px;
+    padding: 13px 16px;
+}
+.ikon{
+	border-radius: 25%;
+    transition: background 0.5s;
+    font-size: 12px;
+    padding: 8px 12px;
+}
+.ikon:hover{
+	background-color: black;
+	color: white;
+}
+.footer{
+	display: flex;
+	justify-content: center;
+	padding-top: 15px; 
+	text-transform: capitalize;
+}
+.image12{
+	padding-right: 12px;
+}
+.copyright{
+	text-decoration: none;
+}
+/*footer product*/
+.products{
+	text-decoration: none;
+	color: black;
+}
+.products:hover{
+	color: #ff96b1;
+}
+.span-title{
+	font-size: 20px;
+	padding-top: 20px;
+}
+.bg-fotter{
+	padding-top: 2vh;
+	background-color: #ffdee6;
+}
+.image6{
+	border-radius: 50%;
+}
+.imageg img{
+	margin-top: -20px;
+}
+.kelas{
+	margin-top: -25px;
+	display: flex;
+	align-items: center;
+}
 /*Large devices (desktops, 992px and up*/
 @media (min-width: 992px) {
 	/*Navbar*/
@@ -456,6 +519,7 @@ body{
 		bottom: 22px;
 		right: 0;
 	}
+	/*footer*/
 }
 @media (max-width: 600px){
 	.bisa .music-container .box{
@@ -472,5 +536,14 @@ body{
 		width: 100%;
 		display: flex;
 		align-items: center;
+	}
+	/*footer*/
+	.imagef{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.image12{
+		padding-right: 10px;
 	}
 }
